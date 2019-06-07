@@ -1,0 +1,1365 @@
+body
+	background: $w
+	font-family: $lato
+
+ul,
+ol,
+button
+	padding: 0
+	margin: 0
+
+a
+	text-decoration: none
+	color: $main
+	&:hover
+		color: $context
+
+.b
+	font-weight: bold
+
+.content
+	max-width: 1170px
+	margin: 0 auto
+	padding: 0 15px
+	+r(1170)
+		max-width: 100%
+
+.topline
+	height: 80px
+	+df
+	justify-content: space-between
+	align-items: center
+	color: $grey
+	font-size: 10px
+	padding: 0 15px
+	+r(768)
+		height: 50px
+		background: $w
+		+pf
+		top: 0
+		left: 0
+		right: 0
+		z-index: 99
+	a
+		font-size: 10px
+		text-transform: uppercase
+		color: $grey
+		&:hover
+			color: $context
+	&__logo
+		img
+			display: block
+			width: 90px
+			height: 14px
+	&__l
+		width: 30%
+		+r(768)
+			display: none
+		&-menu
+			+clr
+			li
+				float: left
+				margin-right: 30px
+				+pr
+				&:before
+					content: '|'
+					color: $grey
+					+pa
+					right: -15px
+					top: -1px
+					+r(510)
+						display: none
+				&:last-child
+					margin-right: 0
+					&:before
+						display: none
+				&.stores
+					svg
+						top: -2px
+				&.with--icon
+					a
+						padding-left: 25px
+				a
+					+pr
+					&:hover
+						svg
+							fill: $context
+							path
+								fill: $context
+				svg
+					width: 13px
+					height: 16px
+					+pa
+					left: 0
+	&__c
+		width: 40%
+		+df
+		+cc
+		+r(940)
+			width: 30%
+		+r(768)
+			justify-content: flex-start
+	&__r
+		width: 30%
+		+df
+		align-items: center
+		justify-content: flex-end
+		+r(940)
+			width: 40%
+		+r(768)
+			width: 70%
+		&-links
+			+r(768)
+				display: none
+			a
+				margin-right: 30px
+				+pr
+				&:before
+					content: '|'
+					color: $grey
+					+pa
+					right: -15px
+					top: -1px
+					pointer-events: none
+					+r(620)
+						display: none
+				&:last-child
+					margin-right: 0
+					&:before
+						display: none
+				span.b
+					color: $main
+		&-buttons
+			margin-left: 35px
+			+df
+			align-items: center
+			justify-content: flex-end
+			padding-right: 10px
+			button
+				background-color: transparent
+				border: 0
+				outline: none
+				cursor: pointer
+				margin-right: 22px
+				&:hover
+					svg
+						fill: $context
+						path
+							fill: $context
+				&:last-child
+					margin-right: 0
+				&.wishlist
+					width: 17px
+					height: 14px
+					svg
+						width: 17px
+						height: 14px
+				&.cart
+					+pr
+					margin-right: 0
+					+r(768)
+						margin-right: 22px
+					&:hover
+						.cart__count
+							box-shadow: none
+							background: $context
+					svg
+						width: 14px
+						height: 16px
+					.cart__count
+						width: 19px
+						height: 19px
+						border-radius: 90%
+						+df
+						+cc
+						+pa
+						top: -10px
+						right: -10px
+						background: $main
+						color: $w
+						font-size: 10px
+						transition: box-shadow $t
+						box-shadow: 0 5px 15px rgba($b, 0.39)
+.bottomline
+	height: 80px
+	+df
+	+cc
+	+r(768)
+		margin-top: 50px
+	&__menu
+		ul
+			+df
+			+cc
+			+fw
+			li
+				margin-right: 57px
+				&:last-child
+					margin-right: 0
+				a
+					text-transform: uppercase
+					font-size: 12px
+					font-weight: 900
+					line-height: 50px
+					display: block
+					+pr
+					padding: 0 15px
+					&.active
+						&:before
+							+c
+							+pa
+							bottom: 0
+							left: 0
+							right: 0
+							height: 2px
+							background: #f3c0eb
+							opacity: 1
+
+.text__right
+	text-align: right
+
+.line
+	&:after
+		+c
+		+pa
+		top: 50px
+		z-index: -1
+		left: -15px
+		width: 155px
+		height: 17px
+	&.line__pink
+		&:after
+			background: #f05c70
+	&.line__cream
+		&:after
+			background: #E9E4D1
+	&.line__greyblue
+		&:after
+			background: #9FA4BB
+	&.line__blue
+		&:after
+			background: #bdd3ff
+	&.line__dorange
+		&:after
+			background: #fe825d
+	&.line__orange
+		&:after
+			background: #ffd897
+	&.line__cian
+		&:after
+			background: #b2fbee
+	&.line__gcian
+		&:after
+			background: #96dcc6
+
+.ttu
+	text-transform: uppercase
+
+.mainslider
+	overflow: hidden
+	+pr
+	.swiper-wrapper
+		z-index: 2
+	&__pagination
+		+df
+		+cc
+		padding: 15px 0
+		+pa
+		bottom: 100px !important
+		z-index: 2
+		width: auto !important
+		left: 50% !important
+		transform: translate(-50%, 0)
+		span
+			font-size: 0
+			box-shadow: 0 0 0 2px transparent
+			width: 5px
+			height: 5px
+			background: $w
+			opacity: 1
+			outline: none
+			border-radius: 50%
+			&.swiper-pagination-bullet-active
+				box-shadow: 0 0 0 2px $w
+				background-color: transparent
+	&__slide
+		+pr
+	&__item
+		min-height: 530px
+		width: 100%
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		margin-bottom: 70px
+		+pr
+		z-index: 1
+		&-blured
+			@extend .mainslider__item
+			+pa
+			left: 50%
+			transform: translate(-50%, 0)
+			z-index: 0
+	&__info
+		+pa
+		z-index: 2
+		top: 115px
+		left: 95px
+		right: 95px
+		+r(768)
+			text-align: center
+		&.right
+			+clr
+			.mainslider__title
+				text-align: right
+				+r(768)
+					text-align: center
+				&:after
+					left: auto
+					right: -35px
+					+r(768)
+						right: auto
+						left: 50%
+						transform: translate(calc(-50% + -100px), 0) rotate3d(1, 0, 0, 180deg) !important
+			.mainslider__link
+				float: right
+				+r(768)
+					float: none
+	&__title
+		font-size: 70px
+		font-family: $old
+		color: $w
+		line-height: 80px
+		margin-bottom: 30px
+		&.dark
+			color: $main
+		&:after
+			+c
+			+pa
+			top: 50px
+			z-index: -1
+			left: -35px
+			transition: transform 1s linear
+			transform: rotate3d(1, 0, 0, 180deg)
+			+r(768)
+				left: 50%
+				transform: translate(calc(-50% + -100px), 0) rotate3d(1, 0, 0, 180deg) !important
+	&__link
+		font-size: 11px
+		color: $w
+		padding: 15px
+		display: inline-block
+		border: 1px solid rgba($w, .5)
+		border-radius: 30px
+		&.dark
+			border-color: $main
+			color: $main
+			&:hover
+				color: $main
+		&:hover
+			color: $w
+	&__bullets
+		.first__bullet
+			left: calc(50% - 80px)
+			top: 260px
+		.second__bullet
+			right: calc(50% - 175px)
+			bottom: 200px
+
+.swiper-slide-active
+	.mainslider__title
+		&:after
+			transform: rotate3d(0, 0, 0, 0deg)
+
+.bullet
+	width: 37px
+	height: 37px
+	border-radius: 50%
+	+df
+	+cc
+	opacity: .2
+	transition: opacity $t
+	+r(940)
+		display: none
+	&:hover
+		opacity: 1
+	&__item
+		+pa
+		z-index: 3
+		&.is--top
+			z-index: 4
+		&.first__bullet
+			.bullet__arrow
+				&:before
+					top: calc(50% - 45px)
+	&__info
+		+pa
+		min-width: 150px
+		padding: 15px
+		border-radius: 5px
+		background: $w
+		z-index: 3
+		top: -200px
+		left: 50px
+		box-shadow: 0 12px 22px rgba($b, 0.16)
+		// opacity: 0
+		// visibility: hidden
+	&__text
+		z-index: 1
+		+pr
+	// &__close
+	// 	+pa
+	// 	top: 15px
+	// 	right: 15px
+	// 	width: 15px
+	// 	height: 15px
+	// 	border-radius: 50%
+	// 	border: 0
+	// 	background: $context
+	// 	+df
+	// 	+cc
+	// 	z-index: 1
+	// 	&-overlay
+	// 		+pf
+	// 		top: 0
+	// 		bottom: 0
+	// 		left: 0
+	// 		right: 0
+	// 		z-index: 2
+	// 	&:before,
+	// 	&:after
+	// 		+c
+	// 		+pa
+	// 		width: 8px
+	// 		height: 2px
+	// 		background: $w
+	// 	&:after
+	// 		transform: rotate(45deg)
+	// 	&:before
+	// 		transform: rotate(-45deg)
+	&__arrow
+		&:before
+			+c
+			+pa
+			top: 5px
+			left: -5px
+			+arr(30, 30, $w, bl)
+			transform: rotate(45deg)
+	&:before
+		transform: rotate(90deg)
+	&:before,
+	&:after
+		+c
+		+pa
+		background: $w
+		width: 2px
+		height: 10px
+	&.bullet__pink
+		background: #f05c70
+	&.bullet__white
+		background: $w
+		&:before,
+		&:after
+			background: $main
+	&.bullet__dark
+		background: $main
+		&:before,
+		&:after
+			background: $w
+
+.cart
+	&.is--active
+		svg
+			fill: $context
+			path
+				fill: $context
+		.cart__count
+			background: $context !important
+			box-shadow: 0 5px 15px rgba($context, .39) !important
+	&__wrapper
+		+pr
+	&__popup
+		+pa
+		right: 0
+		top: 30px
+		padding: 15px
+		z-index: 8
+		width: 285px
+		background: $w
+		opacity: 0
+		display: none
+		box-shadow: 0 22px 22px rgba(0,0,0,.16)
+	&__product
+		+df
+		justify-content: space-between
+		+pr
+		margin-bottom: 15px
+		&:last-child
+			margin-bottom: 0
+		&-image
+			width: 30%
+			img
+				width: 100%
+		&-info
+			width: 70%
+			padding: 0 15px
+		&-title,
+		&-category
+			display: block
+			font-size: 12px
+		&-title
+			font-weight: bold
+			color: $main !important
+		&-category
+			margin: 9px 0 22px
+		&-price
+			text-align: left !important
+		&-remove
+			+pa
+			width: 10px
+			height: 10px
+			top: 0
+			right: 0
+			svg
+				width: 100%
+				height: 100%
+	&__sub
+		a
+			display: block
+	&__total
+		+df
+		justify-content: space-between
+		font-size: 12px
+		color: $main !important
+		text-transform: uppercase
+		font-weight: bold
+		margin-bottom: 30px
+		align-items: center
+		&-l
+			width: 50%
+		&-r
+			width: 50%
+			&-price
+				text-align: right !important
+	&__checkout
+		max-width: 145px
+		text-align: center
+		margin: 0 auto 23px
+	&__seebasket
+		text-align: center
+		text-transform: uppercase
+		font-size: 11px
+		color: $main !important
+
+.button
+	padding: 17px
+	border-radius: 32px
+	text-transform: uppercase
+	color: $w
+	font-size: 12px
+	background: #3e3e40
+	border: 0
+	outline: none
+	cursor: pointer
+	min-width: 100px
+	&.half__transparent
+		background: rgba(#3e3e40, .8)
+	&.transparent
+		background-color: transparent
+		padding: 0
+	&.button__underline
+		text-decoration: underline
+		&:hover
+			text-decoration: none
+	&.dark__text
+		color: $main
+		&:hover
+			color: $context
+
+.shop
+	&__item
+		+pr
+		+df
+		justify-content: center
+		flex-direction: column
+		flex-wrap: wrap
+		padding-bottom: 20px
+	&__image
+		text-align: center
+	&__title
+		text-align: center
+		text-transform: uppercase
+		font-weight: bold
+		font-size: 12px
+		margin-bottom: 15px
+	&__price
+		text-align: center
+		font-weight: bold
+		font-size: 15px
+		text-transform: uppercase
+	&__buy
+		@extend .button
+		+pa
+		bottom: -40px
+		left: 50%
+		transform: translate(-50%, 0)
+
+.section
+	&__title
+		@extend .mainslider__title
+		color: $main
+		text-transform: uppercase
+		font-size: 50px
+		line-height: 60px
+		margin-bottom: 0
+		&:after
+			top: 35px
+			left: -15px
+			+r(668)
+				text-align: center
+				left: 50%
+				transform: translate(calc(-50% + -100px), 0)
+	&__headtitle
+		font-size: 16px
+		font-family: $old
+		text-transform: uppercase
+		font-weight: bold
+		+pr
+		&:before
+			+c
+			+pa
+			top: -21px
+			left: 50%
+			transform: translate(-50%, 0)
+			width: 52px
+			height: 8px
+			background: #fae498
+	&__text
+		line-height: 23px
+
+.style
+	&__image
+		width: 45%
+		height: 664px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		transition: box-shadow $t2
+		+pr
+		+r(940)
+			margin: 0 auto 30px
+			width: 50%
+		+r(768)
+			width: 100%
+		&:hover
+			box-shadow: 0 12px 22px rgba($b, 0.16)
+		.first__bullet
+			top: 300px
+			right: 135px
+			.bullet__info
+				top: 35px
+				left: 35px
+	&__info
+		width: 40%
+		margin-right: -75px
+		margin-top: -120px
+		+pr
+		z-index: 1
+		+r(940)
+			margin-top: 0
+			margin-right: 0
+			margin: 0 auto
+			width: 50%
+		+r(668)
+			width: 100%
+			text-align: center
+	&__description
+		margin-left: 15%
+		+pr
+		margin-bottom: 70px
+		+r(940)
+			margin-left: 0
+	&__item
+		width: 134px
+		height: 77px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		+pr
+		&s
+			+df
+			justify-content: space-between
+			+r(940)
+				margin-bottom: 30px
+		.title
+			text-transform: uppercase
+			+pa
+			bottom: 13px
+			left: 13px
+			font-weight: 900
+			font-size: 12px
+	.content
+		+df
+		justify-content: flex-end
+		align-items: center
+		+r(940)
+			display: block
+
+.bold
+	font-weight: 900
+
+.with--bullets
+	&:hover
+		.bullet
+			opacity: 1
+
+.inspire
+	margin-top: -65px
+	+r(940)
+		margin-top: auto
+	&__item
+		width: 285px
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		transition: box-shadow $t2
+		+pr
+		+r(1190)
+			width: 220px
+		+r(940)
+			width: 100%
+			margin-bottom: 30px
+		&:hover
+			box-shadow: 0 12px 22px rgba($b, 0.16)
+		&s
+			height: 490px
+			+df
+			+fw
+			justify-content: space-between
+			width: 50%
+			+r(1190)
+				justify-content: flex-end
+			+r(940)
+				display: block
+				height: auto
+				margin: 0 auto
+				order: 2
+			+r(768)
+				width: 100%
+			&-left
+				+df
+				flex-direction: column
+				justify-content: space-between
+				+r(940)
+					display: block
+		&.half
+			height: 48%
+			+r(940)
+				height: 500px
+			&:last-child
+				margin-bottom: 0
+				+r(940)
+					margin-bottom: 30px
+			&:nth-of-type(1)
+				.first__bullet
+					top: 95px
+					right: 21px
+			&:nth-of-type(2)
+				.first__bullet
+					top: 137px
+					left: 23px
+		&.full
+			height: 100%
+			+r(940)
+				height: 500px
+			.first__bullet
+				top: 195px
+				right: 121px
+			.second__bullet
+				bottom: 30px
+				left: 95px
+	&__info
+		@extend .style__info
+		margin-right: auto
+		margin-left: -75px
+		margin-top: -50px
+		width: 50%
+		+r(940)
+			margin-top: auto
+			margin-left: 0
+			margin: 0 auto 30px
+			order: 1
+		&-text
+			.button
+				margin-left: 100px
+				+r(940)
+					margin-left: 0
+	.content
+		+df
+		justify-content: flex-end
+		align-items: center
+		+r(940)
+			flex-direction: column
+
+.mostliked
+	padding: 100px 0
+	+r(940)
+		padding: 50px 0
+	&__headtitle
+		text-align: center
+		// margin-bottom: 51px
+	&__item
+		width: 23%
+		+pr
+		transition: box-shadow $t2
+		+r(940)
+			width: 47%
+			margin-bottom: 30px
+			&:last-child
+				margin-bottom: 0
+		+r(768)
+			width: 100%
+		&:hover
+			box-shadow: 0 12px 22px rgba($b, 0.16)
+			.mostliked__colors
+				opacity: 1
+			.mostliked__navigation
+				opacity: 1
+			.mostliked__preview
+				opacity: 1
+				transform: translate(-50%, 0) rotate3d(0, 0, 0, 90deg)
+		&s
+			overflow: hidden
+			padding: 50px 20px
+			+df
+			+fw
+			justify-content: space-between
+	&__navigation
+		+pa
+		top: 50%
+		left: 0
+		right: 0
+		transform: translate(0, -50%)
+		+df
+		justify-content: space-between
+		z-index: 1
+		pointer-events: none
+		opacity: 0
+		transition: opacity $t2
+	&__next,
+	&__prev
+		pointer-events: all
+		background-color: transparent
+		outline: none
+		border: 0
+		cursor: pointer
+		padding: 15px
+		&:hover
+			svg
+				fill: $context
+				path
+					fill: $context
+		svg
+			width: 8px
+			height: 12px
+	&__prev
+		transform: rotate(180deg)
+	&__image
+		+pr
+		img
+			display: block
+			width: 100%
+	&__preview
+		+pa
+		text-align: center
+		bottom: 35px
+		left: 50%
+		transform: translate(-50%, 0) rotate3d(1, 0, 0, 90deg)
+		z-index: 2
+		opacity: 0
+		transition: opacity $t2, transform .3s linear
+	&__info
+		+df
+		flex-direction: column
+		text-align: center
+		padding: 15px
+		text-transform: uppercase
+		font-size: 12px
+	&__title
+		font-weight: bold
+		line-height: 23px
+	&__category
+		color: #a9abb0
+		margin-bottom: 23px
+	&__price
+		margin-bottom: 16px
+	&__colors
+		opacity: 0
+		transition: opacity $t2
+		button
+			width: 10px
+			height: 10px
+			cursor: pointer
+			outline: none
+			border: 0
+			border-radius: 50%
+			margin-right: 6px
+			&:last-child
+				margin-right: 0
+			&.is--checked
+				box-shadow: 0 0 0 2px $context
+			&.red
+				background-color: #d88981
+			&.yellow
+				background-color: #dadc59
+			&.blue
+				background-color: #8ca9f1
+
+.bigitem
+	&__description
+		+pr
+	&__info
+		width: 30%
+		&-title
+			font-family: $lato
+			margin-bottom: 20px
+			&:after
+				top: 39px
+	&__image
+		width: 70%
+		min-height: 590px
+		background-size: 100%
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		+r(940)
+			min-height: 400px
+	.content
+		+df
+		justify-content: space-between
+		align-items: center
+	&__price
+		text-align: left
+		font-size: 28px
+		color: $main
+		margin-bottom: 30px
+	&__button
+		min-width: 120px
+		text-align: center
+		display: inline-block
+
+.newsletter
+	&__info
+		max-width: 400px
+		margin: 0 auto 40px
+		text-align: center
+		+pr
+		&-title
+			text-transform: none
+	&__form
+		max-width: 400px
+		margin: 0 auto
+		+pr
+		form
+			width: 100%
+			+pr
+			height: 45px
+		input
+			width: 100%
+			height: 45px
+			border: 0
+			outline: none
+			box-shadow: inset 0px -1px 0px 0px rgba(#d8d8d9, 1)
+			padding: 0 30px
+			transition: box-shadow $t2
+			font-size: 22px
+			color: #a9abb0
+			&:focus
+				box-shadow: inset 0px -45px 0px 0px rgba($w, 1)
+			+placeholder
+				font-style: italic
+				font-family: $old
+				color: #a9abb0
+		button
+			+pa
+			right: 20px
+			top: 0
+			height: 45px
+			width: 45px
+			cursor: pointer
+			outline: none
+			border: 0
+			background-color: transparent
+			&:hover
+				svg
+					transform: translate(10px, 0)
+					fill: $context
+					path
+						fill: $context
+			svg
+				width: 14px
+				height: 13px
+				transform: none
+				transition: transform $t2, fill $t
+				path
+					transition: fill $t
+
+.worldandsocials
+	padding: 180px 0
+	+r(940)
+		padding: 100px 0
+	&__headtitle
+		text-align: center
+		margin-bottom: 75px
+		&:before
+			background-color: #e4dbff
+	&__info
+		+pr
+		margin-left: -75px
+		width: 55%
+		&-title
+			+r(940)
+				font-size: 30px
+				line-height: 40px
+				&:after
+					top: 18px
+	&__description
+		+pr
+		z-index: 1
+	&__image
+		background-size: cover
+		background-repeat: no-repeat
+		background-position: 50% 50%
+		width: 45%
+		min-height: 450px
+	&__wrapper
+		+df
+		justify-content: flex-start
+		align-items: center
+	&__date
+		text-transform: uppercase
+		font-size: 22px
+		margin-bottom: 15px
+		color: $main
+
+.instagram
+	overflow: hidden
+	padding-bottom: 105px
+	&__slider
+		+pr
+	&__title
+		margin-bottom: 60px
+		text-transform: uppercase
+		text-align: center
+		font-size: 22px
+		color: $main
+	&__image
+		padding: 0 15px
+		img
+			display: block
+			width: 100%
+	&__navigation
+		+pa
+		pointer-events: none
+		top: 50%
+		transform: translate(0, -50%)
+		left: -20px
+		right: -20px
+		z-index: 1
+		+df
+		justify-content: space-between
+		button
+			pointer-events: all
+			border: 0
+			background-color: transparent
+			width: 40px
+			height: 40px
+			outline: none
+			cursor: pointer
+			&:hover
+				svg
+					fill: $context
+					path
+						fill: $context
+			svg
+				width: 7px
+				height: 12px
+				transition: fill $t
+				path
+					transition: fill $t
+	&__prev
+		transform: rotate(180deg)
+
+.footer
+	a
+		color: #a9abb0
+		&:hover
+			color: $context
+	&__l
+		+df
+		justify-content: space-between
+		width: 70%
+		padding-right: 100px
+		+r(1170)
+			width: 60%
+		+r(940)
+			display: block
+			width: 40%
+		+r(768)
+			width: 100%
+			padding-right: 0
+		&-menu
+			ul
+				+r(940)
+					margin-bottom: 30px
+				li
+					&:first-child
+						margin-bottom: 30px
+						+r(940)
+							margin-bottom: 5px
+					a
+						color: #a9abb0
+						display: block
+						padding: 11px 0
+						&:hover
+							color: $context
+	&__r
+		width: 30%
+		+r(1170)
+			width: 40%
+		+r(940)
+			width: 60%
+		+r(768)
+			width: 100%
+		&-image
+			display: block
+			margin-bottom: 15px
+	&__t
+		+df
+		justify-content: space-between
+		margin-bottom: 60px
+		+r(768)
+			display: block
+			text-align: center
+		&-title
+			text-transform: uppercase
+			color: $main
+			font-weight: 900
+	&__b
+		background: #eff0f4
+		padding: 60px 0
+		+r(940)
+			padding: 30px 0
+	&__country
+		text-transform: uppercase
+		color: $main
+		font-weight: 900
+		background-color: transparent
+		border: 0
+		outline: none
+		cursor: pointer
+		font-family: $lato
+		font-size: 15px
+		width: 50%
+		text-align: left
+		+r(940)
+			text-align: center
+		&:hover
+			color: $context
+		span
+			color: #a9abb0
+			font-weight: normal
+			+pr
+			display: inline-block
+			margin-left: 20px
+			&:before
+				content: '\\'
+				color: $main
+				+pa
+				left: -12px
+	&__language
+		@extend .footer__country
+	&__buttons
+		+df
+		justify-content: space-between
+		+fw
+		margin-bottom: 60px
+		+r(940)
+			display: block
+			text-align: center
+	&__find
+		@extend .footer__country
+		color: $main !important
+		&:hover
+			color: $context !important
+			svg
+				transform: translate(10px, 0)
+				fill: $context
+				path
+					fill: $context
+		svg
+			+pr
+			top: 2px
+			width: 14px
+			height: 14px
+			transform: none
+			transition: transform $t2, fill $t
+			path
+				transition: fill $t
+	&__links
+		+df
+		justify-content: space-between
+		align-items: flex-end
+		margin-bottom: 60px
+		+r(940)
+			display: block
+			text-align: center
+	&__social
+		+df
+		justify-content: space-between
+		+r(940)
+			max-width: 150px
+			margin: 0 auto 30px
+		li
+			margin-right: 17px
+			&:last-of-type
+				margin-right: 0
+			a
+				&:hover
+					svg
+						fill: $context
+						path
+							fill: $context
+				svg
+					transition: fill $t
+					path
+						transition: fill $t
+				&.youtube
+					&:hover
+						svg
+							fill: auto
+							path
+								&:nth-of-type(2)
+									fill: $w
+		.facebook
+			svg
+				width: 9px
+				height: 16px
+		.twitter
+			svg
+				width: 16px
+				height: 14px
+		.instagram
+			svg
+				width: 16px
+				height: 16px
+		.youtube
+			svg
+				width: 23px
+				height: 16px
+	&__contactus
+		+r(940)
+			margin-bottom: 30px
+		li
+			&:first-child
+				margin-bottom: 35px
+				+r(940)
+					margin-bottom: 5px
+	&__phone
+		+r(940)
+			margin-bottom: 30px
+	&__cards
+		li
+			float: left
+			+r(940)
+				float: none
+			&:first-child
+				float: none
+				margin-bottom: 35px
+				+r(940)
+					margin-bottom: 5px
+	&__logo
+		@extend .topline__logo
+		+r(940)
+			display: block
+			margin-bottom: 15px
+	&__b
+		.content
+			+df
+			justify-content: space-between
+			align-items: center
+			color: #a9abb0
+			+r(940)
+				display: block
+	&__copy
+		+r(940)
+			margin-bottom: 15px
+	&__terms
+		a
+			+pr
+			display: inline-block
+			text-transform: uppercase
+			margin-right: 30px
+			&:hover
+				&:before
+					color: #a9abb0
+			&:before
+				content: '|'
+				+pa
+				right: -17px
+				top: -1px
+				pointer-events: none
+			&:last-child
+				margin-right: 0
+				&:before
+					display: none
+
+.burger
+	width: 30px
+	height: 30px
+	padding: 5px
+	display: none
+	&.is--active
+		span
+			background: $context
+	+r(768)
+		display: block
+	span
+		display: block
+		width: 20px
+		height: 2px
+		background: $b
+		&:nth-of-type(2)
+			margin: 5px 0
+
+.mobile
+	&__menu
+		+pf
+		top: 50px
+		right: 0
+		width: 200px
+		background: $w
+		padding: 5px 30px 15px 15px
+		display: none
+		opacity: 0
+		// visibility: hidden
+		text-align: right
+		box-shadow: 0 22px 22px rgba(0,0,0,.16)
+		svg
+			display: none
+		a
+			display: block
+			color: $main
+			font-size: 12px
+		ul
+			+
+				a
+					margin-bottom: 15px
+			li
+				float: none
+				margin-right: 0
+				margin-bottom: 15px
+				&:before
+					display: none !important
+				a
+					padding-left: 0 !important
+
+		+rmin(768)
+			display: none !important

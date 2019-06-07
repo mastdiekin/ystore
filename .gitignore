@@ -1,0 +1,11 @@
+/node_modules/
+/app/js/src/bullets.js
+/app/libs/
+/dist/
+/docs/libs/
+desktop.ini
+*.sublime-workspace
+*.sublime-project
+/app/psd/
+sftp-config.json
+*.zip

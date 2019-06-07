@@ -1,0 +1,1517 @@
+---
+title: ystore
+---
+{% extends "app/pages/layout/_main.html" %}
+
+
+{% block content %}
+
+<!-- begin header -->
+<header class="header">
+
+	<!-- begin content -->
+	<div class="content">
+		
+		<!-- begin topline -->
+		<div class="topline">
+			
+			<!-- begin topline__l -->
+			<div class="topline__l">
+				
+				<ul class="topline__l-menu">
+						
+					<li class="with--icon stores">
+						<a href="#">
+							{{ mixins.svg('nav') }}
+							Stores
+						</a>
+					</li>
+
+					<li class="contact">
+						<a href="#">
+							Contact
+						</a>
+					</li>
+
+				</ul>
+
+			</div>
+			<!-- end topline__l -->
+
+			<!-- begin topline__c -->
+			<div class="topline__c">
+				
+				<a href="/" class="topline__logo">
+					<img src="images/logo.svg" alt="">
+				</a>
+
+			</div>
+			<!-- end topline__c -->
+
+			<!-- begin topline__r -->
+			<div class="topline__r">
+				
+				<div class="topline__r-links">
+						
+					<a href="#" class="language">
+						Language: <span class="b">it</span>
+					</a>
+
+					<a href="#" class="login">
+						Login
+					</a>
+
+				</div>
+
+				<div class="topline__r-buttons">
+					
+					<button class="wishlist">
+						{{ mixins.svg('wishlist') }}
+					</button>
+
+					<div class="cart__wrapper">
+						<button class="cart">
+							{{ mixins.svg('cart') }}
+							<span class="cart__count">
+								2
+							</span>
+						</button>
+						<div class="cart__popup">
+
+							<!-- begin cart__product -->
+							<div class="cart__product">
+								<div class="cart__product-image">
+									<img src="images/cart1.png" alt="">
+								</div>
+								<div class="cart__product-info">
+									<a href="#" class="cart__product-title">
+										T-Shirt pompom
+									</a>
+									<a href="#" class="cart__product-category">
+										Whitee - S
+									</a>
+									<div class="cart__product-price shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">119,00</span>
+									</div>
+									<button class="cart__product-remove">
+										{{ mixins.svg('remove') }}
+									</button>
+								</div>
+							</div>
+							<!-- end cart__product -->
+							<!-- begin cart__product -->
+							<div class="cart__product">
+								<div class="cart__product-image">
+									<img src="images/cart2.png" alt="">
+								</div>
+								<div class="cart__product-info">
+									<a href="#" class="cart__product-title">
+										Crop top with front knot
+									</a>
+									<a href="#" class="cart__product-category">
+										Grey - s
+									</a>
+									<div class="cart__product-price shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">99,00</span>
+									</div>
+									<button class="cart__product-remove">
+										{{ mixins.svg('remove') }}
+									</button>
+								</div>
+							</div>
+							<!-- end cart__product -->
+
+							<!-- begin cart__sub -->
+							<div class="cart__sub">
+								<div class="cart__total">
+									<div class="cart__total-l">
+										Subtotal
+									</div>
+									<div class="cart__total-r">
+										<div class="cart__total-r-price shop__price">
+											<span class="shop__price-type">$</span>
+											<span class="shop__price-count">268,00</span>
+										</div>
+									</div>
+								</div>
+								<a href="#" class="cart__checkout button">
+									Checkout
+								</a>
+								<a href="#" class="cart__seebasket">
+									See shopping basket
+								</a>
+							</div>
+							<!-- end cart__sub -->
+
+						</div>
+					</div>
+
+					<button class="burger">
+						<span></span>
+						<span></span>
+						<span></span>
+					</button>
+
+				</div>
+
+				<!-- begin mobile__menu --><!-- for dupe elements -->
+				<div class="mobile__menu"></div>
+				<!-- end mobile__menu --><!-- for dupe elements -->
+
+
+
+			</div>
+			<!-- end topline__r -->
+
+		</div>
+		<!-- end topline -->
+
+		<!-- begin bottomline -->
+		<div class="bottomline">
+			
+			<nav class="bottomline__menu">
+				
+				<ul>
+					<li>
+						<a href="#" class="active">
+							Woman
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Men
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Junior
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							World
+						</a>
+					</li>
+					<li>
+						<a href="#">
+							Sales
+						</a>
+					</li>
+				</ul>
+
+			</nav>
+
+		</div>
+		<!-- end bottomline -->
+
+	</div>
+	<!-- end content -->
+
+</header>
+<!-- end header -->
+<!-- begin slider -->
+<section class="slider">
+	
+	<!-- begin content -->
+	<div class="content">
+
+		<!-- begin mainslider -->
+		<div class="mainslider">
+			<div class="swiper-wrapper">
+
+				<!-- begin swiper-slide -->
+				<div class="swiper-slide mainslider__slide js__mainslider__slide" data-width="93" data-blur="20" data-offset="-15" data-img="images/slider1.png">
+					
+					<div class="mainslider__info">
+
+						<div class="mainslider__title ttu line line__pink">
+							Spring<br>Summer<br>2017
+						</div>
+
+						<a href="#" class="mainslider__link ttu">
+							Discover collection
+						</a>
+
+					</div>
+
+					<div class="mainslider__bullets with--bullets bullets">
+						
+						<!-- begin bullet__item -->  <!-- begin first__bullet -->
+						<div class="bullet__item first__bullet" id="mbnm">
+							<a href="#" class="bullet bullet__pink js__bullet"></a>
+							<div class="bullet__info" style="display: none;">
+								<div class="bullet__text">
+									<!-- begin shop__item -->
+									<div class="shop__item">
+										
+										<div class="shop__image">
+											<img src="images/shop-item1.png" alt="">
+										</div>
+
+										<div class="shop__title">
+											Volant manual dress
+										</div>
+
+										<div class="shop__price">
+											<span class="shop__price-type">$</span>
+											<span class="shop__price-count">119,00</span>
+										</div>
+
+										<button class="shop__buy">
+											Shop
+										</button>
+
+									</div>
+									<!-- end shop__item -->
+								</div>
+								<button class="bullet__close" style="display: none;"></button>
+							</div>
+						</div>
+						<!-- end bullet__item -->  <!-- end first__bullet -->
+
+
+						<!-- begin bullet__item -->  <!-- begin second__bullet -->
+						<div class="bullet__item second__bullet" id="asd">
+							<a href="#" class="bullet bullet__pink js__bullet"></a>
+							<div class="bullet__info" style="display: none;">
+								<div class="bullet__text">
+
+									<!-- begin shop__item -->
+									<div class="shop__item">
+										
+										<div class="shop__image">
+											<img src="images/shop-item1.png" alt="">
+										</div>
+
+										<div class="shop__title">
+											Volant manual dress
+										</div>
+
+										<div class="shop__price">
+											<span class="shop__price-type">$</span>
+											<span class="shop__price-count">119,00</span>
+										</div>
+
+										<button class="shop__buy">
+											Shop
+										</button>
+
+									</div>
+									<!-- end shop__item -->
+								</div>
+								<button class="bullet__close" style="display: none;"></button>
+							</div>
+						</div>
+						<!-- end bullet__item -->  <!-- end second__bullet -->
+					</div>
+
+				</div>
+				<!-- end swiper-slide -->
+
+				<!-- begin swiper-slide -->
+				<div class="swiper-slide mainslider__slide js__mainslider__slide" data-width="93" data-blur="20" data-offset="-15" data-img="images/slider2.png">
+					
+					<div class="mainslider__info">
+
+						<div class="mainslider__title ttu line line__cream dark">
+							Spring<br>Summer<br>2019
+						</div>
+
+						<a href="#" class="mainslider__link ttu dark">
+							Discover collection
+						</a>
+
+					</div>
+
+				</div>
+				<!-- end swiper-slide -->
+
+				<!-- begin swiper-slide -->
+				<div class="swiper-slide mainslider__slide js__mainslider__slide" data-width="93" data-blur="20" data-offset="-15" data-img="images/slider3.png">
+					
+					<div class="mainslider__info right">
+
+						<div class="mainslider__title ttu line line__greyblue dark">
+							Spring<br>Summer<br>2087
+						</div>
+
+						<a href="#" class="mainslider__link ttu dark">
+							Discover collection
+						</a>
+
+					</div>
+
+				</div>
+				<!-- end swiper-slide -->
+
+			</div>
+			<div class="mainslider__pagination"></div>
+		</div>
+		<!-- end mainslider -->
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end slider -->
+<!-- begin style -->
+<section class="style">
+
+	<!-- begin content -->
+	<div class="content">
+	
+		<!-- begin style__info -->
+		<div class="style__info">
+
+			<!-- begin style__description -->
+			<div class="style__description">
+				<div class="style__info-title section__title line line__orange">
+					Y Store<br>Style
+				</div>
+
+				<div class="style__info-text section__text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatibus nisi earum nobis dolores cum consequuntur, unde amet quo a, rem sunt mollitia hic nesciunt beatae fuga alias animi optio.
+					</p>
+				</div>
+			</div>
+			<!-- end style__description -->
+
+			<!-- begin style__items -->
+			<div class="style__items">
+				
+				<a href="#" class="style__item woman" style="background-image: url('images/style-woman.png');">
+					<div class="title">
+						Woman
+					</div>
+				</a>
+
+				<a href="#" class="style__item men" style="background-image: url('images/style-men.png');">
+					<div class="title">
+						Men
+					</div>
+				</a>
+
+				<a href="#" class="style__item junior" style="background-image: url('images/style-jun.png');">
+					<div class="title">
+						Junior
+					</div>
+				</a>
+
+			</div>
+			<!-- end style__items -->
+
+		</div>
+		<!-- end style__info -->
+
+		<!-- begin style__image -->
+		<div class="style__image with--bullets" style="background-image: url('images/style-image1.png');">
+			
+			<!-- begin bullet__item -->  <!-- begin first__bullet -->
+			<div class="bullet__item first__bullet">
+				<a href="#" class="bullet bullet__white js__bullet"></a>
+				<div class="bullet__info" style="display: none;">
+					<div class="bullet__text">
+
+						<!-- begin shop__item -->
+						<div class="shop__item">
+
+							<div class="shop__image">
+								<img src="images/shop-item1.png" alt="">
+							</div>
+
+							<div class="shop__title">
+								Volant manual dress
+							</div>
+
+							<div class="shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">119,00</span>
+							</div>
+
+							<button class="shop__buy">
+								Shop
+							</button>
+
+						</div>
+						<!-- end shop__item -->
+					</div>
+					<button class="bullet__close" style="display: none;"></button>
+				</div>
+			</div>
+			<!-- end bullet__item -->  <!-- end first__bullet -->
+
+		</div>
+		<!-- end style__image -->
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end style -->
+<!-- begin inspire -->
+<section class="inspire">
+
+	<!-- begin content -->
+	<div class="content">
+
+		<!-- begin inspire__items -->
+		<div class="inspire__items">
+
+			<div class="inspire__items-left">
+				<div class="inspire__item with--bullets half" style="background-image: url('images/inspire-item1.png');">
+					<!-- begin bullet__item -->  <!-- begin first__bullet -->
+					<div class="bullet__item first__bullet">
+						<a href="#" class="bullet bullet__dark js__bullet"></a>
+						<div class="bullet__info" style="display: none;">
+							<div class="bullet__text">
+
+								<!-- begin shop__item -->
+								<div class="shop__item">
+
+									<div class="shop__image">
+										<img src="images/shop-item1.png" alt="">
+									</div>
+
+									<div class="shop__title">
+										Volant manual dress
+									</div>
+
+									<div class="shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">119,00</span>
+									</div>
+
+									<button class="shop__buy">
+										Shop
+									</button>
+
+								</div>
+								<!-- end shop__item -->
+							</div>
+							<button class="bullet__close" style="display: none;"></button>
+						</div>
+					</div>
+					<!-- end bullet__item -->  <!-- end first__bullet -->
+				</div>
+
+				<div class="inspire__item with--bullets half" style="background-image: url('images/inspire-item2.png');">
+					<!-- begin bullet__item -->  <!-- begin first__bullet -->
+					<div class="bullet__item first__bullet">
+						<a href="#" class="bullet bullet__dark js__bullet"></a>
+						<div class="bullet__info" style="display: none;">
+							<div class="bullet__text">
+
+								<!-- begin shop__item -->
+								<div class="shop__item">
+
+									<div class="shop__image">
+										<img src="images/shop-item1.png" alt="">
+									</div>
+
+									<div class="shop__title">
+										Volant manual dress
+									</div>
+
+									<div class="shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">119,00</span>
+									</div>
+
+									<button class="shop__buy">
+										Shop
+									</button>
+
+								</div>
+								<!-- end shop__item -->
+							</div>
+							<button class="bullet__close" style="display: none;"></button>
+						</div>
+					</div>
+					<!-- end bullet__item -->  <!-- end first__bullet -->
+				</div>
+			</div>
+
+			<div class="inspire__items-right">
+				
+				<div class="inspire__item with--bullets full" style="background-image: url('images/inspire-item3.png');">
+					<!-- begin bullet__item -->  <!-- begin first__bullet -->
+					<div class="bullet__item first__bullet">
+						<a href="#" class="bullet bullet__dark js__bullet"></a>
+						<div class="bullet__info" style="display: none;">
+							<div class="bullet__text">
+
+								<!-- begin shop__item -->
+								<div class="shop__item">
+
+									<div class="shop__image">
+										<img src="images/shop-item1.png" alt="">
+									</div>
+
+									<div class="shop__title">
+										Volant manual dress
+									</div>
+
+									<div class="shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">119,00</span>
+									</div>
+
+									<button class="shop__buy">
+										Shop
+									</button>
+
+								</div>
+								<!-- end shop__item -->
+							</div>
+							<button class="bullet__close" style="display: none;"></button>
+						</div>
+					</div>
+					<!-- end bullet__item -->  <!-- end first__bullet -->
+					<!-- begin bullet__item -->  <!-- begin second__bullet -->
+					<div class="bullet__item second__bullet">
+						<a href="#" class="bullet bullet__dark js__bullet"></a>
+						<div class="bullet__info" style="display: none;">
+							<div class="bullet__text">
+
+								<!-- begin shop__item -->
+								<div class="shop__item">
+
+									<div class="shop__image">
+										<img src="images/shop-item1.png" alt="">
+									</div>
+
+									<div class="shop__title">
+										Volant manual dress
+									</div>
+
+									<div class="shop__price">
+										<span class="shop__price-type">$</span>
+										<span class="shop__price-count">120,00</span>
+									</div>
+
+									<button class="shop__buy">
+										Shop
+									</button>
+
+								</div>
+								<!-- end shop__item -->
+							</div>
+							<button class="bullet__close" style="display: none;"></button>
+						</div>
+					</div>
+					<!-- end bullet__item -->  <!-- end second__bullet -->
+				</div>
+
+			</div>
+
+		</div>
+		<!-- end inspire__items -->
+
+		<!-- begin inspire__info -->
+		<div class="inspire__info">
+			<!-- begin inspire__description -->
+			<div class="inspire__description">
+				<div class="inspire__info-title section__title line line__dorange">
+					Inspire<br>your self
+				</div>
+
+				<div class="inspire__info-text section__text">
+					<p>
+						Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatibus nisi earum nobis dolores cum consequuntur, unde amet quo a, rem sunt mollitia hic nesciunt beatae fuga alias animi optio.
+					</p>
+					<a href="#" class="button transparent button__underline dark__text bold">Discover look</a>
+				</div>
+			</div>
+			<!-- end style__description -->
+		</div>
+		<!-- end inspire__info -->
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end inspire -->
+<!-- begin mostliked -->
+<section class="mostliked">
+	
+	<!-- begin content -->
+	<div class="content">
+		<div class="mostliked__headtitle section__headtitle">
+			Most liked
+		</div>
+
+		<!-- begin mostliked__items -->
+		<div class="mostliked__items">
+			
+			<!-- begin mostliked__item -->
+			<div class="mostliked__item">
+				<div class="swiper-wrapper">
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item1.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Triangle Bikini Top
+							</a>
+							<a href="#" class="mostliked__category">
+								Red
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">59,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item2.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Clean long shirt
+							</a>
+							<a href="#" class="mostliked__category">
+								Bootlet blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">119,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item3.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Short Sleeve Pullover
+							</a>
+							<a href="#" class="mostliked__category">
+								Blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">150,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow"></button>
+								<button class="blue is--checked"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item4.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Sporty Dress
+							</a>
+							<a href="#" class="mostliked__category">
+								Black
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">198,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow is--checked"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+				</div>
+				<div class="mostliked__navigation">
+					<button class="mostliked__prev">{{ mixins.svg('arrow') }}</button>
+					<button class="mostliked__next">{{ mixins.svg('arrow') }}</button>
+				</div>
+			</div>
+			<!-- end mostliked__item -->
+
+
+			<!-- begin mostliked__item -->
+			<div class="mostliked__item">
+				<div class="swiper-wrapper">
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="http://placehold.it/214x214" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Triangle Bikini Top
+							</a>
+							<a href="#" class="mostliked__category">
+								Red
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">59,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item2.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Clean long shirt
+							</a>
+							<a href="#" class="mostliked__category">
+								Bootlet blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">119,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item3.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Short Sleeve Pullover
+							</a>
+							<a href="#" class="mostliked__category">
+								Blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">150,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow"></button>
+								<button class="blue is--checked"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item4.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Sporty Dress
+							</a>
+							<a href="#" class="mostliked__category">
+								Black
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">198,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow is--checked"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+				</div>
+				<div class="mostliked__navigation">
+					<button class="mostliked__prev">{{ mixins.svg('arrow') }}</button>
+					<button class="mostliked__next">{{ mixins.svg('arrow') }}</button>
+				</div>
+			</div>
+			<!-- end mostliked__item -->
+
+
+			<!-- begin mostliked__item -->
+			<div class="mostliked__item">
+				<div class="swiper-wrapper">
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item1.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Triangle Bikini Top
+							</a>
+							<a href="#" class="mostliked__category">
+								Red
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">59,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item2.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Clean long shirt
+							</a>
+							<a href="#" class="mostliked__category">
+								Bootlet blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">119,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item3.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Short Sleeve Pullover
+							</a>
+							<a href="#" class="mostliked__category">
+								Blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">150,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow"></button>
+								<button class="blue is--checked"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item4.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Sporty Dress
+							</a>
+							<a href="#" class="mostliked__category">
+								Black
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">198,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow is--checked"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+				</div>
+				<div class="mostliked__navigation">
+					<button class="mostliked__prev">{{ mixins.svg('arrow') }}</button>
+					<button class="mostliked__next">{{ mixins.svg('arrow') }}</button>
+				</div>
+			</div>
+			<!-- end mostliked__item -->
+
+			<!-- begin mostliked__item -->
+			<div class="mostliked__item">
+				<div class="swiper-wrapper">
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item1.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Triangle Bikini Top
+							</a>
+							<a href="#" class="mostliked__category">
+								Red
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">59,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item2.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Clean long shirt
+							</a>
+							<a href="#" class="mostliked__category">
+								Bootlet blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">119,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red is--checked"></button>
+								<button class="yellow"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item3.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Short Sleeve Pullover
+							</a>
+							<a href="#" class="mostliked__category">
+								Blue
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">150,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow"></button>
+								<button class="blue is--checked"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+					<!-- begin mostlikes__slide -->
+					<div class="swiper-slide mostlikes__slide">
+						<div class="mostliked__image">
+							<img src="images/mostliked-item4.png" alt="">
+							<a href="#" class="mostliked__preview button half__transparent">
+								Preview
+							</a>
+						</div>
+						<div class="mostliked__info">
+							<a href="#" class="mostliked__title">
+								Sporty Dress
+							</a>
+							<a href="#" class="mostliked__category">
+								Black
+							</a>
+							<div class="mostliked__price shop__price">
+								<span class="shop__price-type">$</span>
+								<span class="shop__price-count">198,00</span>
+							</div>
+							<div class="mostliked__colors">
+								<button class="red"></button>
+								<button class="yellow is--checked"></button>
+								<button class="blue"></button>
+							</div>
+						</div>
+					</div>
+					<!-- end mostlikes__slide -->
+
+				</div>
+				<div class="mostliked__navigation">
+					<button class="mostliked__prev">{{ mixins.svg('arrow') }}</button>
+					<button class="mostliked__next">{{ mixins.svg('arrow') }}</button>
+				</div>
+			</div>
+			<!-- end mostliked__item -->
+
+		</div>
+		<!-- end mostliked__items -->
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end mostliked -->
+<!-- begin bigitem -->
+<section class="bigitem">
+	
+	<!-- begin content -->
+	<div class="content">
+		
+		<div class="bigitem__info">
+			<!-- begin bigitem__description -->
+			<div class="bigitem__description">
+				<div class="bigitem__info-title section__title line line__cian">
+					Two-tone<br>plimsolls
+				</div>
+				<div class="bigitem__price shop__price">
+					<span class="shop__price-type">$</span>
+					<span class="shop__price-count">119,00</span>
+				</div>
+				<a href="#" class="bigitem__button button">
+					Shop
+				</a>
+			</div>
+			<!-- end bigitem__description -->
+		</div>
+		<div class="bigitem__image" style="background-image: url('images/bigitem.png');"></div>
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end bigitem -->
+<!-- begin newsletter -->
+<section class="newsletter">
+	
+	<!-- begin content -->
+	<div class="content">
+
+		<div class="newsletter__info">
+		
+			<div class="newsletter__info-title section__title line line__blue">
+				Discover the<br>Y Store world
+			</div>
+			<div class="newsletter__info-text section__text">
+				<p>
+					Stay ahead, send us your email address here.
+				</p>
+			</div>
+
+		</div>
+
+		<div class="newsletter__form">
+			
+			<form action="#">
+				<input type="text" placeholder="Your Email">
+				<button type="submit">
+					{{ mixins.svg('arr') }}
+				</button>
+			</form>
+
+		</div>
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end newsletter -->
+<!-- begin worldandsocials -->
+<section class="worldandsocials">
+	
+	<!-- begin content -->
+	<div class="content">
+		
+		<div class="worldandsocials__headtitle section__headtitle">
+			World & Socials
+		</div>
+		<!-- begin worldandsocials__wrapper -->
+		<div class="worldandsocials__wrapper">
+
+			<!-- begin worldandsocials__image -->
+			<div class="worldandsocials__image" style="background-image: url('images/worldandsocials-image.png');"></div>
+			<!-- end worldandsocials__image -->
+			<!-- begin worldandsocials__info -->
+			<div class="worldandsocials__info">
+				<!-- begin worldandsocials__description -->
+				<div class="worldandsocials__date">
+					May 23, 2017
+				</div>
+				<div class="worldandsocials__description">
+					<div class="worldandsocials__info-title section__title line line__gcian">
+						<a href="#">Milan fashion week Men SS17 presentation</a>
+					</div>
+
+					<div class="worldandsocials__info-text section__text">
+						<p>
+							Lorem ipsum dolor sit amet, consectetur adipisicing elit. Tempore voluptatibus nisi earum nobis dolores cum consequuntur, unde amet quo a, rem sunt mollitia hic nesciunt beatae fuga alias animi optio.
+						</p>
+					</div>
+				</div>
+				<!-- end style__description -->
+			</div>
+			<!-- end inspire__info -->
+
+		</div>
+		<!-- end worldandsocials__wrapper -->
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end worldandsocials -->
+<!-- begin instagram -->
+<section class="instagram">
+	
+	<!-- begin content -->
+	<div class="content">
+		
+		<div class="instagram__title">
+			#ystorefashion
+		</div>
+
+		<div class="instagram__slider">
+			<div class="swiper-wrapper">
+				
+				<!-- begin instagram__slide -->
+				<div class="swiper-slide instagram__slide">
+					<div class="instagram__image">
+						<a href="#">
+							<img src="images/insta1.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- end instagram__slide -->
+
+				<!-- begin instagram__slide -->
+				<div class="swiper-slide instagram__slide">
+					<div class="instagram__image">
+						<a href="#">
+							<img src="images/insta2.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- end instagram__slide -->
+
+				<!-- begin instagram__slide -->
+				<div class="swiper-slide instagram__slide">
+					<div class="instagram__image">
+						<a href="#">
+							<img src="images/insta3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- end instagram__slide -->
+
+				<!-- begin instagram__slide -->
+				<div class="swiper-slide instagram__slide">
+					<div class="instagram__image">
+						<a href="#">
+							<img src="images/insta4.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- end instagram__slide -->
+
+				<!-- begin instagram__slide -->
+				<div class="swiper-slide instagram__slide">
+					<div class="instagram__image">
+						<a href="#">
+							<img src="images/insta3.png" alt="">
+						</a>
+					</div>
+				</div>
+				<!-- end instagram__slide -->
+
+			</div>
+			<div class="instagram__navigation">
+				<button class="instagram__prev">{{ mixins.svg('arrow') }}</button>
+				<button class="instagram__next">{{ mixins.svg('arrow') }}</button>
+			</div>
+		</div>
+
+	</div>
+	<!-- end content -->
+
+</section>
+<!-- end instagram -->
+<!-- begin footer -->
+<footer class="footer">
+
+	<!-- begin content -->
+	<div class="content">
+	
+		<!-- begin footer__t -->
+		<div class="footer__t">
+			
+			<!-- begin footer__l -->
+			<div class="footer__l">
+				
+				<nav class="footer__l-menu">
+					<ul>
+						<li class="footer__t-title">Customer service</li>
+						<li><a href="#">Contact Us</a></li>
+						<li><a href="#">Payment</a></li>
+						<li><a href="#">Shipping</a></li>
+						<li><a href="#">Returns</a></li>
+						<li><a href="#">Faqs</a></li>
+						<li><a href="#">Live Chat</a></li>
+						<li><a href="#">Store Locator</a></li>
+					</ul>
+				</nav>
+
+				<nav class="footer__l-menu">
+					<ul>
+						<li class="footer__t-title">Our company</li>
+						<li><a href="#">Our company</a></li>
+						<li><a href="#">Y Store Group</a></li>
+						<li><a href="#">Careers</a></li>
+						<li><a href="#">Corporate Responsibillity</a></li>
+						<li><a href="#">Site Map</a></li>
+					</ul>
+				</nav>
+
+				<nav class="footer__l-menu">
+					<ul>
+						<li class="footer__t-title">Help</li>
+						<li><a href="#">Your order</a></li>
+						<li><a href="#">Size Guide</a></li>
+						<li><a href="#">Product Care</a></li>
+						<li><a href="#">General Information</a></li>
+					</ul>
+				</nav>
+
+			</div>
+			<!-- end footer__l -->
+
+			<!-- begin footer__r -->
+			<div class="footer__r">
+
+				<a href="#" class="footer__r-image">
+					<img src="images/footer-store.png" alt="">
+				</a>
+
+				<a href="#" class="footer__find">
+					Find a store
+					{{ mixins.svg('arr') }}
+				</a>
+
+			</div>
+			<!-- end footer__r -->
+
+		</div>
+		<!-- end footer__t -->
+
+		<!-- begin footer__buttons -->
+		<div class="footer__buttons">
+			
+			<button class="footer__country">
+				Change country <span>Usa ($)</span>
+			</button>
+
+			<button class="footer__language">
+				Change language <span>English</span>
+			</button>
+
+		</div>
+		<!-- end footer__buttons -->
+
+		<!-- begin footer__links -->
+		<div class="footer__links">
+			
+			<ul class="footer__contactus">
+				<li class="footer__t-title">
+					Contact us
+				</li>
+				<li>
+					<a href="mailto:support@ystore.com">support@ystore.com</a>
+				</li>
+			</ul>
+
+			<ul class="footer__phone">
+				<li>
+					<a href="tel:+1000000000">+1 000 00 00 00</a>
+				</li>
+			</ul>
+
+			<ul class="footer__social">
+				<li>
+					<a href="#" class="facebook">
+						{{ mixins.svg('facebook-icon') }}
+					</a>
+				</li>
+				<li>
+					<a href="#" class="twitter">
+						{{ mixins.svg('twitter-icon') }}
+					</a>
+				</li>
+				<li>
+					<a href="#" class="instagram">
+						{{ mixins.svg('instagram-icon') }}
+					</a>
+				</li>
+				<li>
+					<a href="#" class="youtube">
+						{{ mixins.svg('youtube-icon') }}
+					</a>
+				</li>
+			</ul>
+
+			<ul class="footer__cards">
+				<li class="footer__t-title">
+					Secure shopping
+				</li>
+				<li>
+					<img src="images/visa.png" alt="">
+				</li>
+				<li>
+					<img src="images/as.png" alt="">
+				</li>
+				<li>
+					<img src="images/mc.png" alt="">
+				</li>
+				<li>
+					<img src="images/pp.png" alt="">
+				</li>
+				<li>
+					<img src="images/ts.png" alt="">
+				</li>
+			</ul>
+
+		</div>
+		<!-- end footer__links -->
+
+	</div>
+	<!-- end content -->
+
+	<!-- begin footer__b -->
+	<div class="footer__b">
+
+		<!-- begin content -->
+		<div class="content">
+
+			<a href="/" class="footer__logo">
+				<img src="images/logo-light.svg" alt="">
+			</a>
+
+			<div class="footer__copy">
+				Copyright © 2017  Y STORE - All rights reserved 
+			</div>
+
+			<div class="footer__terms">
+				<a href="#">
+					Privacy
+				</a>
+				<a href="#">
+					Terms of use
+				</a>
+			</div>
+
+		</div>
+		<!-- end content -->
+		
+	</div>
+	<!-- end footer__b -->
+
+</footer>
+<!-- end footer -->
+{% endblock %}

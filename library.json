@@ -1,0 +1,6 @@
+{
+	"csslibs": [
+		"app/libs/swiper/dist/css/swiper.min.css",
+		"app/libs/magnific-popup/dist/magnific-popup.css"
+	]
+}
